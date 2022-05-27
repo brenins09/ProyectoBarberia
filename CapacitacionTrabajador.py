@@ -1,14 +1,25 @@
-class CapacitacionTrabajador():
-    ExperienciaLaboral: str
-    Cuestionario: str
 
-    #CONSTRUCTOR
-     def__init__(self): 
-     self.Administrador = Administrador
+from Administrador import Administrador
 
-     #METODOS
-     def RealizarExamen(self, Cuestionario):
 
-     def CalcularPuntuacion(self, ExamenRealizado):
+class CapacitacionTrabajador:
+     def __init__(self, experienciaLaboral:str, cuestionario:str, administrador:Administrador ): 
+        self.experienciaLaboral = experienciaLaboral
+        self.cuestionario = cuestionario
+        self.administrador = administrador
+     
+     #Metodos
+     def RealizarExamen(self):
+         print("ExamenRealizado")
 
-     def EnviarResultados(self, DatosAdministrador):       
+     def CalcularPuntuacion(self):
+         print("Puntuacion Calculada")
+
+     def EnviarResultados(self):
+         print("Resultado enviado")
+
+objetoAdmin = Administrador(bool, 21, "xiomara", "6 abril 2001", 107234, 32189234)
+
+objetoCapacitacionTrabajador = CapacitacionTrabajador("5 años", "preguntas", objetoAdmin)
+
+#print(objetoCapacitacionTrabajador.CalcularPuntuacion())

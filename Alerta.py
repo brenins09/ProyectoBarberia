@@ -1,12 +1,12 @@
 class Alerta():
-    FechasEspeciales: str
     
     #CONSTRUCTOR
-    def__init__(self, Cliente):
-    self.Usuario = DatosCliente
-    self.Cliente = Cliente
-
+    def __init__(self):
+        pass
+  
     #METODOS
-    def GenerarAlertas(self, FechasEspeciales, DatosCliente):
+    def GenerarAlertas(self):
+        print("hoy 23 hay promocion")
 
-    def EnviarAlertas(self, Alerta, DatosClientes):
+    def EnviarAlertas(self):
+        pass

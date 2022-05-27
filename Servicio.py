@@ -1,4 +1,4 @@
-from ProyectoBarberia.Cliente import Cliente
+from Cliente import Cliente
 
 class Servicio():
     #CONSTRUCTOR
@@ -16,3 +16,9 @@ class Servicio():
     
     def GenerarCoprobante(self):
         print("comprobante generado")
+
+objetoCliente = Cliente("brenins@gmail.com", "create", "brenins", 1990, 101023456, 3147223526)
+
+objetoServicio = Servicio(objetoCliente, 20000, "brenins")
+
+#objetoServicio.CalcularPrecio()
