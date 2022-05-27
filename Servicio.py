@@ -1,13 +1,18 @@
+from ProyectoBarberia.Cliente import Cliente
+
 class Servicio():
-    Nombre: str
-    Precio: int
     #CONSTRUCTOR
-    def __init__(self, Cliente):
-        self.Cliente = Cliente
+    def __init__(self, datosCliente:Cliente, precio: int, nombre: str):
+        self.datosCliente = datosCliente
+        self.precio = precio
+        self.nombre = nombre
 
     #METODOS
-    def CalcularPrecio(self, Nombre, Precio):
+    def CalcularPrecio(self):
+        print("precio 25.000")
 
-    def AplicarDescuentos(self, Fechas):
+    def AplicarDescuentos(self):
+        print("descuento aplicado")
     
-    def GenerarCoprobante(self, PrecioCalculado):
+    def GenerarCoprobante(self):
+        print("comprobante generado")

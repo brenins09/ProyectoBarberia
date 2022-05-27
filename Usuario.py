@@ -1,11 +1,14 @@
 class Usuario():
-    Nombre: str
-    FechaNacimiento: int
-    Cedula: int
-    NumeroTelefonico: int
+    
+    def __init__(self, nombre: str, fechaNacimiento: int, cedula: int, numeroTelefonico: int):
+        self.nombre = nombre
+        self.fechaNacimiento = fechaNacimiento
+        self.cedula = cedula
+        self.numeroTelefonico = numeroTelefonico
 
     # METODOS
-    def CrearUsuario(self, Nombre, FechaNacimiento, Cedula, NumeroTelefonico):
+    def CrearUsuario(self):
+        print("creado exitosaente")
 
-    def ActualizarUsuario(self,  Nombre, FechaNacimiento, Cedula, NumeroTelefonico):
-    
+    def ActualizarUsuario(self):
+        print("actualizado correctamente")

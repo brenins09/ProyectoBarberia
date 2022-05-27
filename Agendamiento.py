@@ -1,19 +1,29 @@
+
+from ProyectoBarberia.Servicio import Servicio
+from ProyectoBarberia.Administrador import Administrador
+
 class Agendamiento():
-    HoraDelTurno: str
-    FechaDelTurno: str
-    TipoDeBarbero: str
-    MedioDePago: bool
 
     #CONSTRUCTOR
-    def __init__(self, Usuario):
-    self.Usuario = Usuario
-    self.Servicio = Servicio
+    def __init__(self, administrador:Administrador, horaDelTurno: str, fechaDelTurno: str, tipoDeBarbero: str, medioDePago: bool, servicio: Servicio):
+        self.datosAdministrador = administrador
+        self.horaDelTurno = horaDelTurno
+        self.fechaDelTurno = fechaDelTurno
+        self.tipoDeBarbero = tipoDeBarbero
+        self.medioDePago = medioDePago
+        self.servicio = servicio
 
     #METODOS
-    def GenerarTurnos(self, HoraDelTurno,FechaDelTurno, TipoDeBarbero):
+    def GenerarTurnos(self):
+        print("turno generado")
     
-    def EnviarNotificacion(self, TurnoGenerado, DatosAdministrador):
+    def EnviarNotificacion(self, DatosAdministrador):
+        print("notificacion enviada")
 
     def CancelarCitas(self):
+        print("cita cancelada")
     
-    def ClasificarPago(self, MedioDePago):
+    def ClasificarPago(self):
+        print("pago clasificado")
+objetoAgendamiento = Agendamiento("10:45 am", "10 abril 2021", "nicolas saldarriaga", "pago en linea")
+print(objetoAgendamiento.horaDelTurno)
